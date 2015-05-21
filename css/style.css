@@ -1471,6 +1471,7 @@ a {
   text-shadow: none;
   padding: 0;
   color: #eef8fc;
+  font: 16px
 }
 .article-entry .highlight pre {
   border: none;
