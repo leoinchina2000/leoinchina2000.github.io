@@ -5,27 +5,33 @@
   
   <title>算法导论笔记1 | 柒夜</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="第2章 算法基础2.1 插入排序排序的描述
-输入：n个数的一个序列a1, a2, …, an输出：输出序列的一个排序,满足a1&amp;lt;=a2&amp;lt;=…&amp;lt;=an。
+  <meta name="description" content="第2章 算法基础2.1 插入排序
+排序的描述输入：n个数的一个序列a1, a2, …, an输出：输出序列的一个排序,满足a1&amp;lt;=a2&amp;lt;=…&amp;lt;=an。
 
 一个有效的方法是插入排序。INSERTION-SORT——From the smallest ont to the biggest one
-ArrayList&amp;lt;int&amp;gt; alist=new ArrayList&amp;lt;">
+
+
+ArrayList&amp;lt;int&amp;gt; alist=new ArrayList&amp;l">
 <meta property="og:type" content="article">
 <meta property="og:title" content="算法导论笔记1">
 <meta property="og:url" content="http://yoursite.com/2015/05/21/算法导论笔记1/index.html">
 <meta property="og:site_name" content="柒夜">
-<meta property="og:description" content="第2章 算法基础2.1 插入排序排序的描述
-输入：n个数的一个序列a1, a2, …, an输出：输出序列的一个排序,满足a1&amp;lt;=a2&amp;lt;=…&amp;lt;=an。
+<meta property="og:description" content="第2章 算法基础2.1 插入排序
+排序的描述输入：n个数的一个序列a1, a2, …, an输出：输出序列的一个排序,满足a1&amp;lt;=a2&amp;lt;=…&amp;lt;=an。
 
 一个有效的方法是插入排序。INSERTION-SORT——From the smallest ont to the biggest one
-ArrayList&amp;lt;int&amp;gt; alist=new ArrayList&amp;lt;">
+
+
+ArrayList&amp;lt;int&amp;gt; alist=new ArrayList&amp;l">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="算法导论笔记1">
-<meta name="twitter:description" content="第2章 算法基础2.1 插入排序排序的描述
-输入：n个数的一个序列a1, a2, …, an输出：输出序列的一个排序,满足a1&amp;lt;=a2&amp;lt;=…&amp;lt;=an。
+<meta name="twitter:description" content="第2章 算法基础2.1 插入排序
+排序的描述输入：n个数的一个序列a1, a2, …, an输出：输出序列的一个排序,满足a1&amp;lt;=a2&amp;lt;=…&amp;lt;=an。
 
 一个有效的方法是插入排序。INSERTION-SORT——From the smallest ont to the biggest one
-ArrayList&amp;lt;int&amp;gt; alist=new ArrayList&amp;lt;">
+
+
+ArrayList&amp;lt;int&amp;gt; alist=new ArrayList&amp;l">
   
     <link rel="alternative" href="/atom.xml" title="柒夜" type="application/atom+xml">
   
@@ -201,10 +207,12 @@ ArrayList&amp;lt;int&amp;gt; alist=new ArrayList&amp;lt;">
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="第2章_算法基础">第2章 算法基础</h1><h2 id="2-1_插入排序">2.1 插入排序</h2><h4 id="排序的描述">排序的描述</h4><blockquote>
-<p>输入：n个数的一个序列a1, a2, …, an<br>输出：输出序列的一个排序,满足a1&lt;=a2&lt;=…&lt;=an。</p>
+        <h1 id="第2章_算法基础">第2章 算法基础</h1><h2 id="2-1_插入排序">2.1 插入排序</h2><blockquote>
+<p>排序的描述<br>输入：n个数的一个序列a1, a2, …, an<br>输出：输出序列的一个排序,满足a1&lt;=a2&lt;=…&lt;=an。</p>
 </blockquote>
-<h4 id="一个有效的方法是插入排序。">一个有效的方法是插入排序。</h4><p>INSERTION-SORT<br>——From the smallest ont to the biggest one</p>
+<p><br>一个有效的方法是插入排序。<br>INSERTION-SORT<br>——From the smallest ont to the biggest one<br></p>
+
+
 <pre><code>ArrayList&lt;<span class="built_in">int</span>&gt; alist=<span class="keyword">new</span> ArrayList&lt;<span class="built_in">int</span>&gt;;
 <span class="built_in">int</span> i=<span class="number">0</span>;
 <span class="keyword">for</span>(<span class="built_in">int</span> j = <span class="number">1</span>; j&lt;=alist.<span class="built_in">size</span>(); j++){
@@ -216,11 +224,8 @@ ArrayList&amp;lt;int&amp;gt; alist=new ArrayList&amp;lt;">
         alist.<span class="built_in">get</span>(i+<span class="number">1</span>)=<span class="variable">key</span>;    
     }
 }
-</code></pre><h4 id="用三点性质证明算法正确性">用三点性质证明算法正确性</h4><ol>
-<li>初始化：循环的第一次迭代之前，它为真。</li>
-<li>保持：如果循环的某次迭代之前它为真，那么下次迭代之前它仍为真。</li>
-<li>终止：在循环终止时，不变式为我们提供一个有用的性质，该性质有助于证明算法正确性。</li>
-</ol>
+</code></pre><p><br>用三点性质证明算法正确性<br>1. 初始化：循环的第一次迭代之前，它为真。<br>2. 保持：如果循环的某次迭代之前它为真，那么下次迭代之前它仍为真。<br>3. 终止：在循环终止时，不变式为我们提供一个有用的性质，该性质有助于证明算法正确性。<br></p>
+
 <h2 id="练习">练习</h2><h3 id="1_重写代码，使其按降序排列">1 重写代码，使其按降序排列</h3><p>INSERTION-SORT<br>——From the biggest ont to the smallest one</p>
 <pre><code>ArrayList&lt;<span class="built_in">int</span>&gt; alist=<span class="keyword">new</span> ArrayList&lt;<span class="built_in">int</span>&gt;;
 <span class="built_in">int</span> i=<span class="number">0</span>;
@@ -233,8 +238,7 @@ ArrayList&amp;lt;int&amp;gt; alist=new ArrayList&amp;lt;">
         alist.<span class="built_in">get</span>(i+<span class="number">1</span>)=<span class="variable">key</span>;    
     }
 }
-</code></pre><h3 id="2_考虑查找问题">2 考虑查找问题</h3><p>输入：n个数的一个序列A=a1, a2, …, an和一个值v。<br>输出：下标i使得v=A[i]或者当v不在A中出现时，v为特殊值NIL。<br>写出线性查找代码，扫描整个序列来查找v。并证明算法正确性。</p>
-
+</code></pre><h3 id="2_考虑查找问题">2 考虑查找问题</h3><p><br>输入：n个数的一个序列A=a1, a2, …, an和一个值v。<br>输出：下标i使得v=A[i]或者当v不在A中出现时，v为特殊值NIL。<br>写出线性查找代码，扫描整个序列来查找v。并证明算法正确性。<br></p>
       
     </div>
     
