@@ -1461,7 +1461,6 @@ a {
   background: #eee;
   text-shadow: 0 1px #fff;
   padding: 0 0.3em;
-  font-size: 0.85em;
   border: none;
 }
 .article-entry pre {
@@ -1472,6 +1471,7 @@ a {
   text-shadow: none;
   padding: 0;
   color: #eef8fc;
+  font-size: 0.85em;
 }
 .article-entry .highlight pre {
   border: none;
