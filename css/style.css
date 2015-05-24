@@ -1447,6 +1447,7 @@ a {
   overflow: auto;
   color: #4c4c4c;
   line-height: 22.400000000000002px;
+  font-size: 20px;
 }
 .article-entry .highlight .gutter pre,
 .article-entry .gist .gist-file .gist-data .line-numbers {
@@ -1462,6 +1463,7 @@ a {
   text-shadow: 0 1px #fff;
   padding: 0 0.3em;
   border: none;
+  font-size: 20px;
 }
 .article-entry pre {
   color: #eef8fc;
@@ -1469,9 +1471,9 @@ a {
 .article-entry pre code {
   background: none;
   text-shadow: none;
-  padding: 0;
+  padding: 0 0.3em;
   color: #eef8fc;
-  font-size: 1.3em;
+  font-size: 20px;
 }
 .article-entry .highlight pre {
   border: none;
