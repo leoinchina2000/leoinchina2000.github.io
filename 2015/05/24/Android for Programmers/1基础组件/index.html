@@ -3,17 +3,17 @@
 <head>
   <meta charset="utf-8">
   
-  <title>test | 柒夜</title>
+  <title>TableLayout,SeekBar及EditText的监听 | 柒夜</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="摘要包括TableLayout，SeekBar，EditText监听">
 <meta property="og:type" content="article">
-<meta property="og:title" content="test">
+<meta property="og:title" content="TableLayout,SeekBar及EditText的监听">
 <meta property="og:url" content="http://yoursite.com/2015/05/24/Android for Programmers/1基础组件/index.html">
 <meta property="og:site_name" content="柒夜">
 <meta property="og:description" content="摘要包括TableLayout，SeekBar，EditText监听">
-<meta property="og:updated_time" content="2015-05-24T13:53:18.450Z">
+<meta property="og:updated_time" content="2015-05-24T14:11:35.950Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="test">
+<meta name="twitter:title" content="TableLayout,SeekBar及EditText的监听">
 <meta name="twitter:description" content="摘要包括TableLayout，SeekBar，EditText监听">
   
     <link rel="alternative" href="/atom.xml" title="柒夜" type="application/atom+xml">
@@ -157,7 +157,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      test
+      TableLayout,SeekBar及EditText的监听
     </h1>
   
 
@@ -224,16 +224,18 @@ mEditText.addTextChangedListener(<span class="keyword">new</span> TextWatcher{
             <span class="comment">//表示最终内容</span>
         }
 
-
         <span class="annotation">@Override</span>
-        <span class="keyword">public</span> <span class="function"><span class="keyword">void</span> <span class="title">beforeTextChanged</span><span class="params">(CharSequence s, <span class="keyword">int</span> start<span class="comment">/*开始的位置*/</span>, <span class="keyword">int</span> count<span class="comment">/*被改变的旧内容数*/</span>, <span class="keyword">int</span> after<span class="comment">/*改变后的内容数量*/</span>)</span> </span>{
-            <span class="comment">//这里的s表示改变之前的内容，通常start和count组合，可以在s中读取本次改变字段中被改变的内容。而after表示改变后新的内容的数量。</span>
+        <span class="keyword">public</span> <span class="function"><span class="keyword">void</span> <span class="title">beforeTextChanged</span><span class="params">(CharSequence s, <span class="keyword">int</span> start<span class="comment">/*开始的位置*/</span>, 
+            <span class="keyword">int</span> count<span class="comment">/*被改变的旧内容数*/</span>, <span class="keyword">int</span> after<span class="comment">/*改变后的内容数量*/</span>)</span> </span>{
+            <span class="comment">//这里的s表示改变之前的内容，通常start和count组合，</span>
+            <span class="comment">//可以在s中读取本次改变字段中被改变的内容。而after表示改变后新的内容的数量。</span>
         }
 
-
         <span class="annotation">@Override</span>
-        <span class="keyword">public</span> <span class="function"><span class="keyword">void</span> <span class="title">onTextChanged</span><span class="params">(CharSequence s, <span class="keyword">int</span> start<span class="comment">/*开始位置*/</span>, <span class="keyword">int</span> before<span class="comment">/*改变前的内容数量*/</span>, <span class="keyword">int</span> count<span class="comment">/*新增数*/</span>)</span> </span>{
-            <span class="comment">//这里的s表示改变之后的内容，通常start和count组合，可以在s中读取本次改变字段中新的内容。而before表示被改变的内容的数量。</span>
+        <span class="keyword">public</span> <span class="function"><span class="keyword">void</span> <span class="title">onTextChanged</span><span class="params">(CharSequence s, <span class="keyword">int</span> start<span class="comment">/*开始位置*/</span>, 
+            <span class="keyword">int</span> before<span class="comment">/*改变前的内容数量*/</span>, <span class="keyword">int</span> count<span class="comment">/*新增数*/</span>)</span> </span>{
+            <span class="comment">//这里的s表示改变之后的内容，通常start和count组合，</span>
+            <span class="comment">//可以在s中读取本次改变字段中新的内容。而before表示被改变的内容的数量。</span>
         }
 });
 </code></pre>
