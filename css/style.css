@@ -1461,6 +1461,7 @@ a {
   background: #eee;
   text-shadow: 0 1px #fff;
   padding: 0 0.3em;
+  font-size: 0.85em;
   border: none;
 }
 .article-entry pre {
@@ -1560,7 +1561,7 @@ a {
   text-decoration: underline;
 }
 pre .comment {
-  color: #666;
+  color: #EEF8FC;
 }
 pre .title {
   color: #a6e22e;

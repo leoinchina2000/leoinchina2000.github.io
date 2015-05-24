@@ -5,19 +5,16 @@
   
   <title>test | 柒夜</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="TableLayout组件TableLayout一般的用法也都知道，就是有几点可能会忘，就做下记录。1.android:stretchColumns，android:shinkColumns和android:collapseColumns
-android:stretchColumns    设置可横向伸展的列。该列可以向行方向伸展，最多可占据一整行。android:shrinkColumns">
+  <meta name="description" content="摘要包括TableLayout，SeekBar，EditText监听">
 <meta property="og:type" content="article">
 <meta property="og:title" content="test">
 <meta property="og:url" content="http://yoursite.com/2015/05/24/Android for Programmers/1基础组件/index.html">
 <meta property="og:site_name" content="柒夜">
-<meta property="og:description" content="TableLayout组件TableLayout一般的用法也都知道，就是有几点可能会忘，就做下记录。1.android:stretchColumns，android:shinkColumns和android:collapseColumns
-android:stretchColumns    设置可横向伸展的列。该列可以向行方向伸展，最多可占据一整行。android:shrinkColumns">
-<meta property="og:updated_time" content="2015-05-24T13:48:14.257Z">
+<meta property="og:description" content="摘要包括TableLayout，SeekBar，EditText监听">
+<meta property="og:updated_time" content="2015-05-24T13:53:18.450Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="test">
-<meta name="twitter:description" content="TableLayout组件TableLayout一般的用法也都知道，就是有几点可能会忘，就做下记录。1.android:stretchColumns，android:shinkColumns和android:collapseColumns
-android:stretchColumns    设置可横向伸展的列。该列可以向行方向伸展，最多可占据一整行。android:shrinkColumns">
+<meta name="twitter:description" content="摘要包括TableLayout，SeekBar，EditText监听">
   
     <link rel="alternative" href="/atom.xml" title="柒夜" type="application/atom+xml">
   
@@ -184,7 +181,9 @@ android:stretchColumns    设置可横向伸展的列。该列可以向行方向
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="TableLayout组件">TableLayout组件</h2><p>TableLayout一般的用法也都知道，就是有几点可能会忘，就做下记录。<br>1.android:stretchColumns，android:shinkColumns和android:collapseColumns</p>
+        <h2 id="摘要">摘要</h2><p>包括TableLayout，SeekBar，EditText监听</p>
+<a id="more"></a>
+<h2 id="TableLayout组件">TableLayout组件</h2><p>TableLayout一般的用法也都知道，就是有几点可能会忘，就做下记录。<br>1.android:stretchColumns，android:shinkColumns和android:collapseColumns</p>
 <p>android:stretchColumns    设置可横向伸展的列。该列可以向行方向伸展，最多可占据一整行。<br>android:shrinkColumns     设置可竖向伸展的列。当该列子控件的内容太多，已经挤满所在行，那么该子控件的内容将往列方向显示。<br>android:collapseColumns 设置要隐藏的列。</p>
 <p>示例：<br>android:stretchColumns=”0”          第0列可伸展<br>android:shrinkColumns=”1,2”         第1,2列皆可收缩<br>android:collapseColumns=”*”         隐藏所有行</p>
 <p>说明：列可以同时具备stretchColumns及shrinkColumns属性，若此，那么当该列的内容N多时，将“多行”显示其内容。（这里不是真正的多行，而是系统根据需要自动调节该行的layout_height）</p>
