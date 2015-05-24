@@ -205,8 +205,21 @@
 <h4 id="2-_选择算法。">2. 选择算法。</h4><blockquote>
 <p>对于A数组中的n个数，首先找出A中最小元素与A[1]元素交换，然后找出A中次小元素与A[2]交换，依次进行。</p>
 </blockquote>
-<p>伪代码<br>    int temp=0;<br>    int flag=0;<br>    for(int i=0;i&lt;=n-2;i++){<br>        flag=i;<br>        for(int j=i+1;j&lt;=n-1;j++){<br>            if(a[flag]&gt;a[j]){<br>                flag=j;<br>            }<br>        }<br>        temp=a[i];<br>        a[i]=a[flag];<br>        a[flag]=temp;<br>    }</p>
-<p>第一次循环，将从第2个开始的所有数中最小的放到第1个位置。<br>对于第j次循环，将从j+1开始到n的数中最小的放到第j个位置，在j之前的数一定比a[j]小。</p>
+<p>伪代码</p>
+<pre><code>int temp=<span class="number">0</span><span class="comment">;</span>
+int flag=<span class="number">0</span><span class="comment">;</span>
+for(int i=<span class="number">0</span><span class="comment">;i&lt;=n-2;i++){</span>
+    flag=i<span class="comment">;</span>
+    for(int j=i+<span class="number">1</span><span class="comment">;j&lt;=n-1;j++){</span>
+        <span class="keyword">if</span>(<span class="literal">a</span>[flag]&gt;<span class="literal">a</span>[j]){
+            flag=j<span class="comment">;</span>
+        }
+    }
+    temp=<span class="literal">a</span>[i]<span class="comment">;</span>
+    <span class="literal">a</span>[i]=<span class="literal">a</span>[flag]<span class="comment">;</span>
+    <span class="literal">a</span>[flag]=temp<span class="comment">;</span>
+}
+</code></pre><p>第一次循环，将从第2个开始的所有数中最小的放到第1个位置。<br>对于第j次循环，将从j+1开始到n的数中最小的放到第j个位置，在j之前的数一定比a[j]小。</p>
 <p>因为对于执行第n-1次循环时，如果a[n]&lt;=a[n-1]时，交换两个数，那么第n个数必定是最大的数，也就没必要对最后一个元素执行循环。<br>最好的情况输入已经排序，除了不需执行交换外赋值外，两层循环仍然需要执行，因此运行时间是θ(n^2)，<br>最坏的情况输入反向排序，运行时间也是θ(n^2)。</p>
 <h4 id="3-_线性查找问题">3. 线性查找问题</h4><blockquote>
 <p>要查找的元素等可能的为数组中任意元素，平均需要检查序列的多少元素，最坏的情况如何。</p>
