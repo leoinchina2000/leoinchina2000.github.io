@@ -250,9 +250,10 @@
 </blockquote>
 <p>输入：两个n元数组A[n]和B[n]，每位只能存储0和1。<br>输出：C[n+1]，满足以下两条规则：如果A[n]+B[n] &lt;= 1，C[n+1]=A[n]+B[n]，；或如果A[n]+B[n]=2，C[n+1]=0 且 C[n]=A[n-1]+B[n-1]+1，。</p>
 <pre><code>int flag=<span class="number">0</span>;
-<span class="keyword">for</span>(int i=n;i&gt;<span class="number">0</span>;i--)<span class="comment">{
-    C[i] = (A[i-1]+B[i-1]+flag) % 2;
-    if((A[i-1]+B[i-1]+flag)&gt;=2){
+<span class="keyword">for</span>(int i=n; i&gt;<span class="number">0</span>; i--)
+<span class="comment">{
+    c[i] = (a[i-1]+b[i-1]+flag) % 2;
+    if((a[i-1]+b[i-1]+flag)&gt;=2){
         flag=1;
     }</span><span class="keyword">else</span><span class="comment">{
         flag=0;
