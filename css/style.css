@@ -1471,7 +1471,6 @@ a {
   text-shadow: none;
   padding: 0;
   color: #eef8fc;
-  font-size: 14px;
 }
 .article-entry .highlight pre {
   border: none;
@@ -1561,7 +1560,7 @@ a {
   text-decoration: underline;
 }
 pre .comment {
-  color: #EEF8FC;
+  color: #666;
 }
 pre .title {
   color: #a6e22e;
