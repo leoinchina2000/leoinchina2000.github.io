@@ -3,18 +3,18 @@
 <head>
   <meta charset="utf-8">
   
-  <title>书单 | 柒夜</title>
+  <title>代码大全笔记2 | 柒夜</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="摘要作为程序员需要看的书">
+  <meta name="description" content="摘要进入到架构层时需要考虑的各种问题">
 <meta property="og:type" content="article">
-<meta property="og:title" content="书单">
-<meta property="og:url" content="http://yoursite.com/2015/05/26/Other/书单/index.html">
+<meta property="og:title" content="代码大全笔记2">
+<meta property="og:url" content="http://yoursite.com/2015/05/27/Code Complete/代码大全笔记2/index.html">
 <meta property="og:site_name" content="柒夜">
-<meta property="og:description" content="摘要作为程序员需要看的书">
-<meta property="og:updated_time" content="2015-05-26T14:56:50.322Z">
+<meta property="og:description" content="摘要进入到架构层时需要考虑的各种问题">
+<meta property="og:updated_time" content="2015-05-27T14:33:56.212Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="书单">
-<meta name="twitter:description" content="摘要作为程序员需要看的书">
+<meta name="twitter:title" content="代码大全笔记2">
+<meta name="twitter:description" content="摘要进入到架构层时需要考虑的各种问题">
   
     <link rel="alternative" href="/atom.xml" title="柒夜" type="application/atom+xml">
   
@@ -140,11 +140,11 @@
 		</header>				
 	</div>
 </nav>
-      <div class="body-wrap"><article id="post-Other/书单" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-Code Complete/代码大全笔记2" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2015/05/26/Other/书单/" class="article-date">
-  	<time datetime="2015-05-26T13:27:06.000Z" itemprop="datePublished">2015-05-26</time>
+      <a href="/2015/05/27/Code Complete/代码大全笔记2/" class="article-date">
+  	<time datetime="2015-05-27T14:27:44.000Z" itemprop="datePublished">2015-05-27</time>
 </a>
     </div>
   
@@ -157,7 +157,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      书单
+      代码大全笔记2
     </h1>
   
 
@@ -166,7 +166,7 @@
       <div class="article-info article-info-post">
         
 	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/杂谈/">杂谈</a></li></ul>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/代码大全/">代码大全</a></li></ul>
 	</div>
 
         
@@ -177,73 +177,36 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="摘要">摘要</h2><p>作为程序员需要看的书<br><a id="more"></a></p>
-<ol>
-<li><p>《代码大全》 史蒂夫·迈克康奈尔<br>马上开始看</p>
+        <h2 id="摘要">摘要</h2><p>进入到架构层时需要考虑的各种问题<br><a id="more"></a></p>
+<h3 id="架构的先决条件">架构的先决条件</h3><p>软件架构是软件设计的高层部分，是用于支撑更细节的设计的框架。把架构作为前期准备，是因为架构的质量决定了系统的概念完整性。</p>
+<h3 id="架构的典型组成部分">架构的典型组成部分</h3><ol>
+<li><p><strong>程序组织</strong><br>系统架构首先要以概括的形式对有关系统做一个综述。应该定义程序的主要构造块，明确各块的责任，明确每个构造块的通信规则。</p>
 </li>
-<li><p>《程序员修炼之道》</p>
+<li><p><strong>主要的类</strong><br>定义需要用到的主要的类，指出每个主要的类的责任以及如何与其他类交互。包含对类的继承体系，状态转换，对象持久化等描述。只需要说明构成系统80%行为的那20%的类。</p>
 </li>
-<li><p>《计算机程序的构造和解释》</p>
+<li><p><strong>数据设计</strong><br>描述所用到的主要文件和数据表的设计，应该定义所用数据库的高层组织结构和内容。</p>
 </li>
-<li><p>《C程序设计语言》</p>
+<li><p><strong>业务规则</strong><br>如果架构依赖于特定的业务规则，就需要详细描述这些规则，并描述这些规则对系统设计的影响。</p>
 </li>
-<li><p>《算法导论》</p>
+<li><p><strong>用户界面设计</strong><br>用户界面通常在需求阶段进行详细说明，如果没有，就在架构中进行详细说明。</p>
 </li>
-<li><p>《重构：改善既有代码的设计》</p>
+<li><p><strong>资源管理</strong><br>架构应该描述一份管理稀缺资源的计划。包括数据库连接，线程，句柄（handle）等。</p>
 </li>
-<li><p>《设计模式》</p>
+<li><p><strong>安全性</strong><br>架构应该描述实现设计层面和代码层面的安全性方法。需要建立威胁模型，编码时将安全性牢记在心，包括处理缓冲区的方法，处理非受信数据的规则，加密，错误消息的细致程度，保护内存中的秘密数据。</p>
 </li>
-<li><p>《人月神话》</p>
+<li><p><strong>性能</strong><br>如果需要关注性能，就在需求中详细定义。架构应该可以提供估计的数据，如果有达不到的性能目标的风险，也应指出。</p>
 </li>
-<li><p>《计算机程序设计艺术》</p>
+<li><p><strong>可伸缩性</strong><br>指系统增长以满足未来需求的能力。可能有应对用户数量，服务器数量，网络节点数量，数据库记录数，数据库记录的长度，交易量等的增长。</p>
 </li>
-<li><p>《编译原理（中文版） | 英文版》（龙书）</p>
+<li><p><strong>互用性</strong><br>如果系统会与其他软件或硬件共享数据或者资源，需要描述如何完成这个任务。</p>
 </li>
-<li><p>《深入浅出设计模式（中文版） | 英文影印版》</p>
+<li><p><strong>国际化或本地化</strong><br>一般是提示，状态显示，错误和帮助信息等文字内容，需要支持不同的地域文化。</p>
 </li>
-<li><p>《哥德尔、艾舍尔、巴赫书：集异璧之大成》</p>
+<li><p><strong>输入输出</strong><br>应详细定义读取策略，是先做后座还是即时做，而且应该描述在哪一层检测I/O错误，在字段，记录，流或者文件的层次。</p>
 </li>
-<li><p>《代码整洁之道》</p>
+<li><p><strong>错误处理</strong><br>最好在架构层对待错误处理。错误处理是进行纠正还是仅仅检测；是主动还是被动的；程序如何传播错误；错误消息的处理有什么约定；如何处理异常；在什么层次上处理错误；每个类在验证其输入数据的有效性方面负有何种责任；希望使用运行环境的错误处理还是建立一套自己的机制。</p>
 </li>
-<li><p>《Effective C++》和《More Effective C++》</p>
-</li>
-<li><p>《编程珠玑》</p>
-</li>
-<li><p>《修改代码的艺术》by Michael Feathers</p>
-</li>
-<li><p>《编码：隐匿在计算机软硬件背后的语言》</p>
-</li>
-<li><p>《禅与摩托车维修艺术 / Zen and the Art of Motorcycle Maintenance》</p>
-</li>
-<li><p>《Peopleware / 人件集:人性化的软件开发》</p>
-</li>
-<li><p>《Coders at Work / 编程人生》</p>
-</li>
-<li><p>《Surely You’re Joking, Mr. Feynman! / 别闹了，费曼先生！》</p>
-</li>
-<li><p>《Effective Java 中文版》</p>
-</li>
-<li><p>《Patterns of Enterprise Application Architecture / 企业应用架构模式》</p>
-</li>
-<li><p>《The Little Schemer》和《The Seasoned Schemer》 nmiranda</p>
-</li>
-<li><p>《交互设计之路》英文名：《The Inmates Are Running The Asylum: Why High Tech Products Drive Us Crazy and How to Restore the Sanity》该书作者：Alan Cooper，人称Visual Basic之父，交互设计之父。他还有另一本中文版著作：《About Face 3 交互设计精髓》</p>
-</li>
-<li><p>《Why’s (Poignant) Guide to Ruby 》</p>
-</li>
-<li><p>《Unix编程艺术》</p>
-</li>
-<li><p>《Practices of an Agile Developer / 高效程序员的45个习惯：敏捷开发修炼之道》</p>
-</li>
-<li><p>《Test-Driven Development by Example. / 测试驱动开发》</p>
-</li>
-<li><p>《Don’t Make Me Think / 点石成金:访客至上的网页设计秘笈》</p>
-</li>
-<li><p>《深入理解计算机系统》</p>
-</li>
-<li><p>《TCP/IP详解》</p>
-</li>
-<li><p>《数字图像处理》</p>
+<li><p><strong>容错性</strong></p>
 </li>
 </ol>
 
@@ -255,18 +218,9 @@
     
 <nav id="article-nav">
   
-    <a href="/2015/05/26/Code Complete/代码大全笔记1/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption"><</strong>
-      <div class="article-nav-title">
-        
-          代码大全笔记1
-        
-      </div>
-    </a>
   
-  
-    <a href="/2015/05/24/Android for Programmers/1基础组件/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">TableLayout,SeekBar及EditText的监听</div>
+    <a href="/2015/05/26/Code Complete/代码大全笔记1/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">代码大全笔记1</div>
       <strong class="article-nav-caption">></strong>
     </a>
   
