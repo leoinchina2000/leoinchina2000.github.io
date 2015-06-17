@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>代码大全笔记5 | 柒夜</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="摘要可以工作的类。本节主要对如何创建高质量的类提供一些精辟的建议。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="代码大全笔记5">
+<meta property="og:url" content="http://yoursite.com/2015/06/10/Code Complete/代码大全笔记5/index.html">
+<meta property="og:site_name" content="柒夜">
+<meta property="og:description" content="摘要可以工作的类。本节主要对如何创建高质量的类提供一些精辟的建议。">
+<meta property="og:updated_time" content="2015-06-17T16:08:18.578Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="代码大全笔记5">
+<meta name="twitter:description" content="摘要可以工作的类。本节主要对如何创建高质量的类提供一些精辟的建议。">
+  
+    <link rel="alternative" href="/atom.xml" title="柒夜" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+</head>
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			<img lazy-src="/img/touxiang.jpg" class="js-avatar">
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">Scorpion</a></h1>
+		</hgroup>
+
+		
+		<p class="header-subtitle">暗夜之虫，汇集光中</p>
+		
+
+		
+			<div class="switch-btn">
+				<div class="icon">
+					<div class="icon-ctn">
+						<div class="icon-wrap icon-house" data-idx="0">
+							<div class="birdhouse"></div>
+							<div class="birdhouse_holes"></div>
+						</div>
+						<div class="icon-wrap icon-ribbon hide" data-idx="1">
+							<div class="ribbon"></div>
+						</div>
+						
+						
+					</div>
+					
+				</div>
+				<div class="tips-box hide">
+					<div class="tips-arrow"></div>
+					<ul class="tips-inner">
+						<li>菜单</li>
+						<li>标签</li>
+						
+						
+					</ul>
+				</div>
+			</div>
+		
+
+		<div class="switch-area">
+			<div class="switch-wrap">
+				<section class="switch-part switch-part1">
+					<nav class="header-menu">
+						<ul>
+						
+							<li><a href="/">主页</a></li>
+				        
+							<li><a href="/archives">所有文章</a></li>
+				        
+						</ul>
+					</nav>
+					<nav class="header-nav">
+						<div class="social">
+							
+						</div>
+					</nav>
+				</section>
+				
+				
+				<section class="switch-part switch-part2">
+					<div class="widget tagcloud" id="js-tagcloud">
+						<a href="/tags/Android基础/" style="font-size: 10px;">Android基础</a> <a href="/tags/代码大全/" style="font-size: 20px;">代码大全</a> <a href="/tags/杂谈/" style="font-size: 10px;">杂谈</a> <a href="/tags/算法导论/" style="font-size: 15px;">算法导论</a>
+					</div>
+				</section>
+				
+				
+				
+
+				
+			</div>
+		</div>
+	</header>				
+</div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"></div>
+  		<h1 class="header-author js-mobile-header hide">Scorpion</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+				<img lazy-src="/img/touxiang.jpg" class="js-avatar">
+			</div>
+			<hgroup>
+			  <h1 class="header-author">Scorpion</h1>
+			</hgroup>
+			
+			<p class="header-subtitle">暗夜之虫，汇集光中</p>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/archives">所有文章</a></li>
+		        
+		        <div class="clearfix"></div>
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+      <div class="body-wrap"><article id="post-Code Complete/代码大全笔记5" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2015/06/10/Code Complete/代码大全笔记5/" class="article-date">
+  	<time datetime="2015-06-10T14:19:23.000Z" itemprop="datePublished">2015-06-10</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      代码大全笔记5
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/代码大全/">代码大全</a></li></ul>
+	</div>
+
+        
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="摘要">摘要</h2><p>可以工作的类。本节主要对如何创建高质量的类提供一些精辟的建议。</p>
+<a id="more"></a>
+<h2 id="类的基础：抽象数据类型">类的基础：抽象数据类型</h2><p>抽象数据类型（ADTs：Abstract Data Types）是指一些数据以及对这些数据所进行的操作的集合。</p>
+<blockquote>
+<p>一个抽象数据模型的例子：<br><br>一个程序中需要用到不同字体，字号，文字属性，来控制显示在屏幕上的文本，一般的写法是currentFont.size=16，如果需要修改，可能会这么写currentFont.size=PointToPixels(12)。但是这么写代码中很多地方会充斥着类似的代码。</p>
+</blockquote>
+<p>使用抽象数据类型的好处有隐藏实现细节，改动不会影响到整个程序，让接口能提供更多信息，更容易提高性能，让程序的正确性更显而易见，程序更具自我说明性，无需在程序内部到处传递数据，可以操作实体而不用在底层实现上操作它。</p>
+<blockquote>
+<p>针对刚刚的例子，可以定义一些用来控制字体的子程序<br><br>currentFont.SetSizeInPoints(sizeInPoints)<br>currentFont.SetSizeInPixels(sizeInPixels)<br>currentFont.SetBoldOn()<br>currentFont.SetBoldOff()<br>currentFont.setItalicOn()<br>currentFont.setItalicOff()<br>currentFont.setTypeFace(faceName)</p>
+</blockquote>
+<p><strong>将常见的底层数据类型创建为ADT并使用这些ADT，而不再使用底层数据类型。把像文件这样常用的对象当成ADT。简单的事物也可当做ADT，不要让ADT依赖于其存储介质。</strong></p>
+<h2 id="良好的类接口">良好的类接口</h2><p><strong>好的抽象：</strong></p>
+<ul>
+<li>类的接口应该展现一致的抽象层次。</li>
+<li>一定要理解类所实现的抽象是什么。</li>
+<li>提供成对的服务。</li>
+<li>把不相关的信息转移到其他类中。</li>
+<li>尽可能让接口可编程，而不是表达语义。</li>
+<li>谨防在修改时破坏接口的抽象。</li>
+<li>不要添加与接口抽象不一致的共用成员。</li>
+<li>同时考虑抽象性和内聚性。</li>
+</ul>
+<p><strong>良好的封装：</strong></p>
+<ul>
+<li>尽可能地限制类和成员的可访问性。</li>
+<li>不要公开暴露成员数据</li>
+<li>避免把私用的实现细节放入类的接口中。</li>
+<li>不要对类的使用者做出任何假设。</li>
+<li>避免使用友元类。</li>
+<li>不要因为一个子程序里仅使用公用子程序，就把它归入公开接口。</li>
+<li>让阅读代码比编写代码更方便。</li>
+<li>要格外警惕从语义上破坏封装性。每当通过查看类的内部实现来得知该如何使用这个类时，就不再是针对接口编程了。</li>
+<li>留意过于紧密的耦合关系。</li>
+</ul>
+<h2 id="有关设计和实现的问题">有关设计和实现的问题</h2><p><strong>包含（“有一个”即“has a”的关系）</strong></p>
+<ul>
+<li>通过包含来实现，比如让姓名，电话成为雇员类的数据成员</li>
+<li>在万不得已时通过private继承来实现“有一个”的关系</li>
+<li>警惕有超过约7个数据成员的类。（5-9个）</li>
+</ul>
+<p><strong>继承（“是一个”即“is a”的关系）</strong></p>
+<ul>
+<li>用public继承来实现是一个的关系</li>
+<li>要么使用继承并进行详细说明，要么就不要用它</li>
+<li>遵循Liskov替换原则</li>
+<li>确保只继承需要继承的部分</li>
+<li>不要覆盖一个不可覆盖的成员函数</li>
+<li>把共用的接口数据及操作放到继承树中尽可能高的位置。</li>
+<li>只有一个实例的类是值的怀疑的</li>
+<li>只有一个派生类的基类也值的怀疑，不要提前设计</li>
+<li>派生后覆盖了某个子程序，但在其中没做任何操作，这种情况也值得怀疑。</li>
+<li>避免让继承体系过深（一般超过3层继承就比较麻烦，基类的数量也最好用5-9个来限制）</li>
+<li>尽量采用多态，避免大量的类型检查</li>
+<li>让所有数据都是private（而非protected）</li>
+</ul>
+<p><strong>成员函数和数据成员</strong></p>
+<ul>
+<li>让类中子程序的数量尽可能少</li>
+<li>禁止隐式地产生你不需要的成员函数和运算符</li>
+<li>减少类所调用的不同子程序的数量</li>
+<li>对其他类的子程序的间接调用要尽可能少</li>
+<li>一般来说，应尽量减小类和类之间相互合作的范围</li>
+</ul>
+<p><strong>构造函数</strong></p>
+<ul>
+<li>如果可能，应该在所有的构造函数中初始化所有的数据成员</li>
+<li>用私用（private）构造函数来强制实现单件属性，如可以对外提供一个static的getInstance()方法来访问唯一实例</li>
+<li>优先采用深层复本，除非论证可行，才采用浅层复本。</li>
+</ul>
+<h2 id="创建类的原因">创建类的原因</h2><ul>
+<li>为现实世界中的对象建模</li>
+<li>为抽象的对象建模</li>
+<li>降低复杂度</li>
+<li>隔离复杂度</li>
+<li>隐藏实现细节</li>
+<li>限制变动的影响范围</li>
+<li>隐藏全局数据</li>
+<li>让参数传递更顺畅</li>
+<li>建立中心控制点</li>
+<li>让代码更易于重用</li>
+<li>为程序族做计划</li>
+<li>把相关的操作包装到一起</li>
+<li>实现某种特定的重构</li>
+</ul>
+<p>应该避免的类</p>
+<ul>
+<li>避免创建万能类</li>
+<li>消除无关紧要的类</li>
+<li>避免用动词命名的类</li>
+</ul>
+<h2 id="要点">要点</h2><ul>
+<li>类的接口应提供一致的抽象，很多问题都是由于违背该原则而引起的</li>
+<li>类的接口应隐藏一些信息——如某个系统接口，某项设计决策，或一些实现细节</li>
+<li>包含往往比继承更为可取——除非你要对“是一个”的关系建模</li>
+<li>继承是一种有用的工具，但它却会增加复杂度，这有违于软件的首要技术使命——管理复杂度</li>
+<li>类是管理复杂度的首选工具，要在设计类时给予足够的关注，才能实现这一目标</li>
+</ul>
+
+      
+    </div>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2015/05/28/Code Complete/代码大全笔记4/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">代码大全笔记4</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+
+
+
+</div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2015 Scorpion
+    	</div>
+      	<div class="footer-right">
+      		
+      	</div>
+    </div>
+  </div>
+</footer>
+    </div>
+    
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
+  <script src="/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
+
+
+<script src="/js/mobile.js" type="text/javascript"></script>
+<script src="/js/main.js" type="text/javascript"></script>
+
+
+
+
+
+<! -- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+
+  </div>
+</body>
+</html>
